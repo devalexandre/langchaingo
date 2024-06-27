@@ -161,6 +161,8 @@ func TestFunctionCall(t *testing.T) {
 	assert.NotNil(t, c1.FuncCall)
 }
 
+//nolint:lll
+
 func showResponse(rsp any) string { //nolint:golint,unused
 	b, err := json.MarshalIndent(rsp, "", "  ")
 	if err != nil {
